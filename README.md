@@ -12,6 +12,12 @@ You must first create a new bot account at https://discordapp.com/developers/app
 
 ## Changelog
 
+5/18/2017 - Rebalanced default due to two 16p default games where wolves got destroyed; Sped up game end and fixed a bug where GAME_START_TIMEOUT would not activate due to a timing issue; Hopefully fixed the issue with reporting how long day and night took; Increased player cap to 20 for gamemodes default and foolish; Rebalanced gamemodes again
+
+5/14/2017 - Added detective role; Added detective to gamemodes and rebalanced foolish
+
+5/10/2017 - Fixed a bug where random role assignment could error if there were no cursed villager choices; Added deceit totem; Changed lycanthropy and deceit so they take effect on the night after they were given; Fixed a spelling error; Fixed an issue with gunner revenge where multiple gunner revenge deaths (possible with harlot) would only count the last one
+
 5/1/2017 - Added random gamemode and gamemode descriptions; Made a common function to do autocompletion; Added autocompletion for role names and gamemodes; Added !game command to view information on gamemodes; Fixed a few minor bugs with gamemode minimum and maximum players
 
 4/24/2017 - Fixed injured traitor and no other wolfteam ending the game in a villwin (injured mechanic should only apply to wolfwin); Fixed multiple gunner templates being applied to a wolf that kills multiple gunners; Any gunner death caused by wolf allows wolf to steal gun (harlot-gunner visiting wolf/victim), and wolf targeting gunner-harlot while they are visiting will not allow wolf to steal gun; Night deaths and a whole slew of more things are now sorted; Lycanthropy now works on harlot visiting wolf, harlot visiting victim; Added a new CS totem
