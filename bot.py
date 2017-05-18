@@ -1935,17 +1935,12 @@ async def end_game(reason, winners=None):
     perms = client.get_channel(GAME_CHANNEL).overwrites_for(client.get_server(WEREWOLF_SERVER).default_role)
     perms.send_messages = True
     await client.edit_channel_permissions(client.get_channel(GAME_CHANNEL), client.get_server(WEREWOLF_SERVER).default_role, perms)
-<<<<<<< HEAD
     if not(session[2]):
         playerperms = client.get_channel(GAME_CHANNEL).overwrites_for(PLAYERS_ROLE)
         playerperms.send_messages = True
         await client.edit_channel_permissions(client.get_channel(GAME_CHANNEL), PLAYERS_ROLE, playerperms)
         
-    for player in list(session[1]):
-        del session[1][player]
-=======
     for player in players:
->>>>>>> upstream/master
         member = client.get_server(WEREWOLF_SERVER).get_member(player)
         if member:
             await client.remove_roles(member, PLAYERS_ROLE)
